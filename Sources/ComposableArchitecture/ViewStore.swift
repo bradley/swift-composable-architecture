@@ -48,6 +48,8 @@ public final class ViewStore<State, Action>: ObservableObject {
 
   private var viewCancellable: AnyCancellable?
 
+  public lazy var objectWillChange = ObservableObjectPublisher()
+
   /// Initializes a view store from a store.
   ///
   /// - Parameters:
